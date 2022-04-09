@@ -1,17 +1,31 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+<!--    <VehicleTrack></VehicleTrack>-->
+<!--    <PathSimplifier></PathSimplifier>-->
+<!--    <StudyVuex></StudyVuex>-->
+<!--    <FileUpload></FileUpload>-->
+    <StudyVueRouter></StudyVueRouter>
+<!--    <StudyVue></StudyVue>-->
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import VehicleTrack from "./components/Polyline";
+import PathSimplifier from "@/components/PathSimplifier";
+import StudyVuex from "@/components/StudyVuex";
+import FileUpload from "@/components/FileUpload";
+import StudyVueRouter from "@/components/StudyVueRouter";
+import StudyVue from "@/components/StudyVue";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    StudyVue,
+    StudyVueRouter,
+    FileUpload,
+    StudyVuex,
+    PathSimplifier,
+    VehicleTrack,
   }
 }
 </script>
